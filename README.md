@@ -2,7 +2,8 @@
 
 ## Project Overview
 
-This project implements the classic Caesar Cipher encryption and decryption algorithm using a circular queue data structure in C. Developed as a final group project for IC 2306 - Programming II, this application demonstrates fundamental concepts of data structures, character manipulation, and modular arithmetic within the context of classical cryptography.
+This project implements the classic Caesar Cipher encryption and decryption algorithm using a circular queue data structure in C Language.
+this application demonstrates fundamental concepts of data structures, character manipulation, and modular arithmetic within the context of classical cryptography.
 
 The program allows users to input a message and a shift key, then choose to either encrypt or decrypt the message. It is designed to handle both uppercase and lowercase English alphabetic characters while leaving non-alphabetic characters (like spaces, numbers, and punctuation) unchanged.
 

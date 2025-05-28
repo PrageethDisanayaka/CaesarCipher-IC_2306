@@ -26,4 +26,7 @@ void initAlphabetQueue(CircularQueue *q); //
 
 char shiftChar(CircularQueue *q, char ch, int key); // for shifting and hndling case and non alperberts.
 
+void encryptMessage(CircularQueue *q, char *message, int key); // for Encrypts a message
+
 #endif
+

@@ -5,7 +5,6 @@
 #include <ctype.h>
 #include "queue_header.h"
 
-
 // Initialize Circular queue
 
 void initAlphabetQueue(CircularQueue *q) {
@@ -17,4 +16,16 @@ void initAlphabetQueue(CircularQueue *q) {
         q->items[i] = 'A' + i; // Populate the queue's items with alphabet chars
         q->count++;
     }
+
+}
+
+// Encrypts a message
+
+void encryptMessage(CircularQueue *q, char *message, int key) {
+    printf("\nEncrypted Message: ");
+
+    for (int i = 0; message[i] != '\0'; i++) {
+        printf("%c", shiftChar(q, message[i], key));
+    }
+    printf("\n\n ***** Thank You  .. ******\n");
 }

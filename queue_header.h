@@ -21,6 +21,6 @@ typedef struct {
 
 void initAlphabetQueue(CircularQueue *q);
 
-char shiftChar(CircularQueue *q, char ch, int key); // for shifting and hndling case and non alperberts
+char shiftChar(CircularQueue *q, char ch, int key); // for shifting and hndling case and non alperberts.
 
 #endif

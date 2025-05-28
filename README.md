@@ -28,7 +28,7 @@ To compile and run this project, you will need a C compiler (e.g., GCC). If usin
 
 **Using GCC (Command Line):**
 
-1.  **Save the files:** Save `main.c` and `queue.h` in the same directory.
+1.  **Save the files:** Save `main.c` and `queue_header.h` in the same directory.
 2.  **Open a terminal or command prompt.**
 3.  **Navigate to the project directory:**
     ```bash

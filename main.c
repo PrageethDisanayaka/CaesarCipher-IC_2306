@@ -18,3 +18,22 @@ void initAlphabetQueue(CircularQueue *q) {
         q->count++;
     }
 }
+
+
+// Shifts a single alphabetic character based on a given key.
+
+char shiftChar(CircularQueue *q, char ch, int key) {
+    if (!isalpha(ch)) {
+        return ch;
+    }
+
+    int isLower = islower(ch);
+    ch = toupper(ch);
+
+    int idx = ch - 'A';
+    int newIdx = (idx + key % MAXQUEUE + MAXQUEUE) % MAXQUEUE; // Handle wrap-around and negative keys
+
+    char shifted = q->items[newIdx]; // Get shifted char from queue's items
+
+    return isLower ? tolower(shifted) : shifted; // Restore original case
+}

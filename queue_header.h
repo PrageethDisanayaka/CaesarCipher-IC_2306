@@ -3,8 +3,11 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-#define MAXQUEUE            26    // Size for english alphabet (A to Z)
-#define MAX_MESSAGE_LENGTH  200  // Maximum length for user input
+// Size for english alphabet (A to Z)
+#define MAXQUEUE            26  
+// Maximum length for user input
+#define MAX_MESSAGE_LENGTH  200  
+
 
 
 //structure of  CircularQueue
@@ -19,8 +22,8 @@ typedef struct {
 
 
 
-void initAlphabetQueue(CircularQueue *q);
+void initAlphabetQueue(CircularQueue *q); // 
 
-char shiftChar(CircularQueue *q, char ch, int key); // for shifting and hndling case and non alperberts
+char shiftChar(CircularQueue *q, char ch, int key); // for shifting and hndling case and non alperberts.
 
 #endif

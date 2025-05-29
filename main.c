@@ -58,3 +58,17 @@ int main() {
     }
 
     printf("\n ***** Convertion succesfull .. ******\n");
+
+  // Perform encryption or decryption
+
+    if (choice == 'E') {
+        encryptMessage(&q, message, key);
+    } else if (choice == 'D') {
+        decryptMessage(&q, message, key);
+    } else {
+
+        printf("An unexpected error occurred.\n\n");
+    }
+
+    return 0;
+}

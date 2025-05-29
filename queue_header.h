@@ -1,3 +1,4 @@
+//This is the header file
 
 #ifndef QUEUE_H
 #define QUEUE_H
@@ -30,5 +31,6 @@ void encryptMessage(CircularQueue *q, char *message, int key); // for Encrypts a
 void decryptMessage(CircularQueue *q, char *message, int key);  // for decrypts a message
 
 #endif
+
 
 

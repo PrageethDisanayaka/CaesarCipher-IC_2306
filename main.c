@@ -34,3 +34,27 @@ int main() {
             printf("Invalid choice. Please enter 'E' for Encryption or 'D' for Decryption.\n");
         }
     }
+
+    // Message Input from user
+
+    printf("Enter your message: ");
+    fgets(message, sizeof(message), stdin);
+    message[strcspn(message, "\n")] = 0; // Remove trailing newline
+
+    // Input loop for Shift Key
+
+    while (1) {
+        printf("Enter shift key: ");
+        scanResult = scanf("%d", &key);
+
+        // Clear buffer after scanf
+        while ((c = getchar()) != '\n' && c != EOF);
+
+        if (scanResult == 1) {
+            break; //  Valid integer key
+        } else {
+            printf("Invalid input. Please enter an integer for the shift key.\n");
+        }
+    }
+
+    printf("\n ***** Convertion succesfull .. ******\n");
